@@ -1,0 +1,117 @@
+body {
+  background-color: white;
+}
+
+a:link {
+  color: #f2c4ce;
+  background-color: transparent;
+  text-decoration: none;
+  font-family: "Quattrocento";
+}
+
+a:visited {
+  color: #f2c4ce;
+  background-color: transparent;
+  text-decoration: none;
+  font-family: "Quattrocento";
+}
+
+a:hover {
+  color: #f2c4ce;
+  background-color: transparent;
+  text-decoration: underline;
+  font-family: "Quattrocento";
+}
+
+a:active {
+  color: #f2c4ce;
+  background-color: transparent;
+  text-decoration: underline;
+  font-family: "Quattrocento";
+}
+
+.btn-group button {
+  background-color: #f2c4ce;
+  border: none;
+  color: #4f4f51;
+  padding: 10px 24px;
+  cursor: pointer;
+  font-family: "Quattrocento";
+  font-size: 25px;
+  text-align: center;
+}
+
+.btn-group button:not(:last-child) {
+  border-right: none;
+}
+
+.btn-group:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.btn-group button:hover {
+  background-color: #f58f7c;
+}
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  background-color: #4f4f51;
+  color: #d6d6d6;
+  font-family: "Quattrocento";
+  grid-area: header;
+  padding: 50px;
+  text-align: justify;
+}
+
+.body {
+  color: #4f4f51;
+  font-size: 15px;
+  padding: 10px;
+  text-align: center;
+}
+.grid-container {
+  display: grid;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-areas:
+    "header1 header header"
+    "left middle right"
+    "footer footer footer";
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.left {
+  grid-area: left;
+  padding: 25px;
+  text-align: center;
+}
+
+.middle {
+  grid-area: middle;
+  padding: 25px;
+  text-align: center;
+}
+
+.right {
+  grid-area: right;
+  padding: 25px;
+  text-align: center;
+}
+
+.footer {
+  background-color: #4f4f51;
+  color: #d6d6d6;
+  font-family: "Quattrocento";
+  font-size: 25px;
+  grid-area: footer;
+  grid-row-gap: 10px;
+  margin-bottom: 0;
+  padding: 50px;
+  text-align: center;
+}
